@@ -117,7 +117,7 @@ int main(){
 	g.addEdgeDFS(1, 2);
 	g.addEdgeDFS(2, 0);
 	g.addEdgeDFS(2, 3);
-	g.addEdge(3, 3);
+	g.addEdgeDFS(3, 3);
 
 	cout << "Following is Depth First Traversal"
 			" (starting from vertex 2) \n";
