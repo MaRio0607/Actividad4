@@ -109,17 +109,17 @@ void GraphDFS::DFS(int v)
 int main(){
     
      // Create a graph given in the above diagram
-    // GraphBFS g(4);
-    // g.addEdgeBFS(0, 1);
-    // g.addEdgeBFS(0, 2);
-    // g.addEdgeBFS(1, 2);
-    // g.addEdgeBFS(2, 0);
-    // g.addEdgeBFS(2, 3);
-    // g.addEdgeBFS(3, 3);
+    GraphBFS G(4);
+    G.addEdgeBFS(0, 1);
+    G.addEdgeBFS(0, 2);
+    G.addEdgeBFS(1, 2);
+    G.addEdgeBFS(2, 0);
+    G.addEdgeBFS(2, 3);
+    G.addEdgeBFS(3, 3);
  
-    // cout << "Following is Breadth First Traversal "
-    //      << "(starting from vertex 2) \n";
-    // g.BFS(2);
+    cout << "Following is Breadth First Traversal "
+         << "(starting from vertex 2) \n";
+    g.BFS(2);
     
 	// Create a graph given in the above diagram
 	GraphDFS g;
