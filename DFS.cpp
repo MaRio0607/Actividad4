@@ -30,14 +30,13 @@ void GraphDFS::DFS(int v)
 int main()
 {
     GraphDFS g;
-    g.addEdge(0, 1);
-    g.addEdge(0, 2);
-    g.addEdge(1, 2);
-    g.addEdge(2, 3);
+    g.addEdgeDFS(0, 1);
+    g.addEdgeDFS(0, 2);
+    g.addEdgeDFS(1, 2);
+    g.addEdgeDFS(2, 3);
     
  
-    cout << "Following is Depth First Search"
-            " (starting from vertex 2) \n";
+    cout << "Following is Depth First Search \n";
     g.DFS(1);
  
     return 0;

@@ -34,14 +34,13 @@ void GraphDLS::DLS(int v, int l)
 int main()
 {
     GraphDLS g;
-    g.addEdge(0, 1);
-    g.addEdge(0, 2);
-    g.addEdge(1, 2);
-    g.addEdge(2, 3);
+    g.addEdgeDLS(0, 1);
+    g.addEdgeDLS(0, 2);
+    g.addEdgeDLS(1, 2);
+    g.addEdgeDLS(2, 3);
     
  
-    cout << "Following is Depth Limited Search"
-            " (starting from vertex 2) \n";
+    cout << "Following is Depth Limited Search \n";
     g.DLS(0, 1);
  
     return 0;

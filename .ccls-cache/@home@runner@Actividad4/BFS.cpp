@@ -1,5 +1,4 @@
-// C++ program to print DFS traversal from
-// a given vertex in a given graph
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -50,24 +49,23 @@ void GraphBFS::BFS(int s)
           }
       }
 }
-
+/*
 int main()
 {
     // Create a graph given in the above diagram
     GraphBFS g(6);
   
-    g.addEdge(0, 1);
-    g.addEdge(0, 2);
+    g.addEdgeBFS(0, 1);
+    g.addEdgeBFS(0, 2);
   
-    g.addEdge(1, 2);
-    g.addEdge(1, 3);
+    g.addEdgeBFS(1, 2);
+    g.addEdgeBFS(1, 3);
     //g.addEdge(1, 4);
   
-    g.addEdge(2, 5);
+    g.addEdgeBFS(2, 5);
   
  
-    cout << "Following is Breadth First Traversal "
-         << "(starting from vertex 2) \n";
+    cout << "Following is Breadth First Traversal  \n";
     g.BFS(1);
  
     return 0;
