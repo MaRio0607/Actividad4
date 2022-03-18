@@ -1,27 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
+ //se crea un grafo usando mapas 
 class GraphDLS {
 public:
     map<int, bool> visited;
     map<int, list<int> > adj;
  
     void addEdgeDLS(int v, int w);
- 
+ //se hace uso de un int mas que servira para establecer el limite 
     void DLS(int v, int l);
 
 };
- 
+ //agregar vertices al grafo 
 void GraphDLS::addEdgeDLS(int v, int w)
 {
     adj[v].push_back(w); 
 }
- 
+  //constructor del grafo
 void GraphDLS::DLS(int v, int l)
 {
     visited[v] = true;
     cout << v << " ";
-
+   //se itera usnado un solo for para revisar si se ha visitado o no y al final se toma en cuenta el valor del limite
     list<int>::iterator i;
     if(l != 0)
     {

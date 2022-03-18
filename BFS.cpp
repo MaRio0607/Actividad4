@@ -1,7 +1,6 @@
-
 #include <bits/stdc++.h>
 using namespace std;
-
+//se crea el grafousando listas
 class GraphBFS
 {
     int V;    
@@ -11,13 +10,13 @@ class GraphBFS
     void addEdgeBFS(int v, int w);
   void BFS(int s); 
 };
-
+//constructor del grafo
 GraphBFS::GraphBFS(int V)
 {
     this->V = V;
     adj = new list<int>[V];
 }
-  
+//agregar vertices al grafo
 void GraphBFS::addEdgeBFS(int v, int w)
 {
     adj[v].push_back(w); 
@@ -25,6 +24,7 @@ void GraphBFS::addEdgeBFS(int v, int w)
  
 void GraphBFS::BFS(int s)
 {
+  //se revisa cuantos nodos has sido visitados
   bool *visited = new bool[V];
     for(int i = 0; i < V; i++)
       visited[i] = false;

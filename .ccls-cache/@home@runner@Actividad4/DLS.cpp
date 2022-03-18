@@ -30,7 +30,7 @@ void GraphDLS::DLS(int v, int l)
             DLS(*i, l-1);
     }
 }
-
+/*
 int main()
 {
     GraphDLS g;
@@ -45,3 +45,4 @@ int main()
  
     return 0;
 }
+*/
